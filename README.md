@@ -1,57 +1,83 @@
-# Economies-2100
+<p align="center">
+  <img src="assets/banner.svg" alt="Economies-2100 - GDP per Capita Projections for Major Economies (2026-2100)" width="100%" />
+</p>
 
-# GDP per Capita Projections for Major Economies (2026–2100)
-
-
-## Overview
-To model how all **16 countries with populations exceeding 100 million** in 2026 evolve by 2100, economists use a **Conditional Solow Convergence Model**. Unlike naive exponential compounding—which unrealistically assumes developing economies grow at high rates indefinitely—conditional convergence accounts for diminishing returns to capital as an economy approaches its structural productivity frontier ($y^*$).
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Economies-2100/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Economies-2100?style=for-the-badge&logo=apachespark&color=yellow" alt="Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Economies-2100/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Economies-2100?style=for-the-badge&color=orange" alt="Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Economies-2100/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Economies-2100?style=for-the-badge&color=blue" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-## 1. Mathematical Model Formulation
+# 🌐 Economies-2100: GDP per Capita Projections for Major Economies (2026–2100) 📈
 
-In neoclassical growth theory (Barro & Sala-i-Martin), log GDP per capita $y_i(t)$ converges toward a country-specific steady-state frontier $y_i^*$ at a structural convergence speed $\lambda_i$:
+> **Predictive Macroeconomic Modeling & Conditional Solow Growth Simulation for the World's 16 Mega-Economies (>100M Population)**
+
+Welcome to **Economies-2100** — an empirical, data-driven macroeconomic research framework projecting gross domestic product per capita (constant 2026 USD) across all 16 countries with populations surpassing 100 million people from 2026 to 2100.
+
+---
+
+## 🔍 Overview & Research Thesis
+
+To accurately model how all **16 mega-population nations** evolve through the 21st century, standard exponential extrapolation is replaced with a **Conditional Solow Convergence Model**. 
+
+Naive exponential compounding unrealistically presumes developing markets expand at elevated rates perpetually without friction. In contrast, **conditional convergence** incorporates neoclassical diminishing marginal returns to physical and human capital as an economy nears its structural productivity frontier ($y^*$).
+
+---
+
+## 📐 1. Mathematical Model Formulation
+
+In neoclassical economic growth theory ([Barro & Sala-i-Martin](https://en.wikipedia.org/wiki/Convergence_(economics))), log GDP per capita $y_i(t)$ converges toward a country-specific steady-state frontier $y_i^*$ at an annual structural convergence velocity $\lambda_i$:
 
 $$\ln y_i(t) = \left(1 - e^{-\lambda_i t}\right)\ln y_i^* + e^{-\lambda_i t}\ln y_i(0)$$
 
-* **Baseline ($t=0$, Year 2026):** Initial nominal GDP per capita ($y_i(0)$) and population figures are anchored to the IMF World Economic Outlook (October 2026) and UN World Population Prospects.
-* **Steady-State Frontier ($y_i^*$):** Represents long-run structural potential (in constant 2026 USD) shaped by institutional quality, demographics, human capital, and technology adoption.
-* **Convergence Speed ($\lambda_i$):** Calibrated around the empirical "iron law of convergence" (~1.4% to 2.5% per year), allowing faster catch-up for high-investment Asian economies and slower structural drag for aging or high-dependency-ratio nations.
+### 📊 Structural Parameter Calibration
+* 🏛️ **Baseline ($t=0$, Year 2026):** Starting nominal GDP per capita ($y_i(0)$) and baseline demographics are anchored to the **IMF World Economic Outlook (October 2026)** and the **United Nations World Population Prospects**.
+* 🎯 **Steady-State Frontier ($y_i^*$):** Denotes the long-run structural potential frontier (in constant 2026 USD) determined by institutional governance, demographic structures, human capital development, infrastructure, and technology adoption rates.
+* ⚡ **Convergence Speed ($\lambda_i$):** Calibrated rigorously against the empirical *"iron law of convergence"* (~1.4% to 2.5% per annum), reflecting accelerated catch-up for high-investment Asian economies and structural demographic headwinds for aging populations.
 
 ---
 
-## 2. Model Results (2026 vs. 2100)
+## 📊 2. Model Results & Global Forecasts (2026 vs. 2100)
 
-Running the simulation across all 16 nations highlights strong relative catch-up by Asian economies (China, Vietnam, India, Indonesia), while absolute income gaps remain wide by 2100.
+Running the simulation across all 16 nations demonstrates significant relative catch-up by Asian economies (**China**, **Vietnam**, **India**, **Indonesia**), while absolute income disparities remain substantial in 2100.
 
-| Country | 2026 Pop (M) | 2026 GDP/Cap | 2050 GDP/Cap | 2075 GDP/Cap | 2100 GDP/Cap | Implied CAGR | % of US (2100) |
+| 🏳️ Country | 👥 2026 Pop (M) | 💵 2026 GDP/Cap | 📈 2050 GDP/Cap | 🚀 2075 GDP/Cap | 🏆 2100 GDP/Cap | ⚡ Implied CAGR | 🎯 % of US (2100) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **United States** | 349.0 | $95,210 | $154,719 | $214,267 | **$263,708** | 1.39% | 100.0% |
-| **Japan** | 122.4 | $35,400 | $70,712 | $115,107 | **$159,570** | 2.06% | 60.5% |
-| **China** | 1,412.9 | $15,370 | $49,424 | $100,571 | **$151,523** | 3.14% | 57.5% |
-| **Vietnam** | 102.2 | $5,260 | $27,241 | $70,622 | **$119,124** | 4.31% | 45.2% |
-| **India** | 1,476.6 | $2,750 | $19,448 | $58,763 | **$106,209** | 5.06% | 40.3% |
-| **Indonesia** | 287.9 | $5,150 | $23,802 | $60,392 | **$103,341** | 4.14% | 39.2% |
-| **Mexico** | 133.0 | $16,190 | $37,203 | $66,841 | **$98,995** | 2.48% | 37.5% |
-| **Russia** | 143.4 | $19,950 | $39,055 | $64,182 | **$91,084** | 2.07% | 34.5% |
-| **Philippines** | 117.7 | $4,360 | $19,630 | $50,140 | **$87,319** | 4.13% | 33.1% |
-| **Brazil** | 213.6 | $12,400 | $28,957 | $53,402 | **$81,328** | 2.57% | 30.8% |
-| **Bangladesh** | 177.8 | $2,890 | $14,503 | $39,635 | **$71,840** | 4.44% | 27.2% |
-| **Egypt** | 120.1 | $4,020 | $16,008 | $39,544 | **$69,395** | 3.92% | 26.3% |
-| **Ethiopia** | 138.9 | $1,130 | $6,998 | $22,424 | **$45,444** | 5.12% | 17.2% |
-| **Nigeria** | 242.4 | $1,590 | $7,743 | $22,389 | **$44,059** | 4.59% | 16.7% |
-| **Pakistan** | 259.3 | $1,840 | $7,323 | $19,372 | **$37,183** | 4.15% | 14.1% |
-| **DR Congo** | 116.5 | $1,110 | $5,403 | $16,032 | **$32,644** | 4.68% | 12.4% |
+| **United States** 🇺🇸 | 349.0 | $95,210 | $154,719 | $214,267 | **$263,708** | 1.39% | 100.0% |
+| **Japan** 🇯🇵 | 122.4 | $35,400 | $70,712 | $115,107 | **$159,570** | 2.06% | 60.5% |
+| **China** 🇨🇳 | 1,412.9 | $15,370 | $49,424 | $100,571 | **$151,523** | 3.14% | 57.5% |
+| **Vietnam** 🇻🇳 | 102.2 | $5,260 | $27,241 | $70,622 | **$119,124** | 4.31% | 45.2% |
+| **India** 🇮🇳 | 1,476.6 | $2,750 | $19,448 | $58,763 | **$106,209** | 5.06% | 40.3% |
+| **Indonesia** 🇮🇩 | 287.9 | $5,150 | $23,802 | $60,392 | **$103,341** | 4.14% | 39.2% |
+| **Mexico** 🇲🇽 | 133.0 | $16,190 | $37,203 | $66,841 | **$98,995** | 2.48% | 37.5% |
+| **Russia** 🇷🇺 | 143.4 | $19,950 | $39,055 | $64,182 | **$91,084** | 2.07% | 34.5% |
+| **Philippines** 🇵🇭 | 117.7 | $4,360 | $19,630 | $50,140 | **$87,319** | 4.13% | 33.1% |
+| **Brazil** 🇧🇷 | 213.6 | $12,400 | $28,957 | $53,402 | **$81,328** | 2.57% | 30.8% |
+| **Bangladesh** 🇧🇩 | 177.8 | $2,890 | $14,503 | $39,635 | **$71,840** | 4.44% | 27.2% |
+| **Egypt** 🇪🇬 | 120.1 | $4,020 | $16,008 | $39,544 | **$69,395** | 3.92% | 26.3% |
+| **Ethiopia** 🇪🇹 | 138.9 | $1,130 | $6,998 | $22,424 | **$45,444** | 5.12% | 17.2% |
+| **Nigeria** 🇳🇬 | 242.4 | $1,590 | $7,743 | $22,389 | **$44,059** | 4.59% | 16.7% |
+| **Pakistan** 🇵🇰 | 259.3 | $1,840 | $7,323 | $19,372 | **$37,183** | 4.15% | 14.1% |
+| **DR Congo** 🇨🇩 | 116.5 | $1,110 | $5,403 | $16,032 | **$32,644** | 4.68% | 12.4% |
 
 ---
 
-![GDP per Capita Projections (2026–2100)](assets/gdp_per_capita_2100_annotated.png)
+### 📉 Convergence Trajectory Chart (2026–2100)
+
+<p align="center">
+  <img src="assets/gdp_per_capita_2100_annotated.png" alt="GDP per Capita Projections (2026–2100) Solow Convergence Simulation Chart" width="100%" />
+</p>
 
 ---
 
-## 3. Reproducible Python Script
+## 🐍 3. Reproducible Python Simulation Script
 
-Run the standalone script below using `numpy`, `pandas`, and `matplotlib` to reproduce the convergence simulation and plot the trajectories:
+Run this standalone simulation script with `numpy`, `pandas`, and `matplotlib` to reproduce the convergence trajectories and visualizations:
 
 ```python
 import matplotlib.pyplot as plt
@@ -120,7 +146,31 @@ plt.show()
 
 ---
 
-## Key Takeaways
-* **Relative Convergence, Absolute Divergence:** India's GDP per capita grows at roughly **5.06% annually** (nearly 39x its 2026 level), shrinking its relative gap with the U.S. from **2.9%** in 2026 to **40.3%** in 2100. However, the dollar gap widens from ~$92,460 in 2026 to ~$157,500 in 2100.
-* **Middle-Income Reordering:** High-convergence Southeast Asian economies like **Vietnam** ($119.1K) and **Indonesia** ($103.3K) overtake slower-growing middle-income countries such as **Mexico** ($99.0K), **Russia** ($91.1K), and **Brazil** ($81.3K) by the late 21st century.
+## 💡 Key Economic Takeaways
 
+* 🔄 **Relative Convergence vs. Absolute Divergence:** India's GDP per capita experiences rapid expansion at **~5.06% annually** (~39× multiple over 2026 levels), narrowing its relative gap with the United States from **2.9%** in 2026 to **40.3%** by 2100. However, the absolute dollar gap expands from ~$92,460 in 2026 to ~$157,500 in 2100.
+* 🚀 **Middle-Income Leapfrogging:** High-convergence Southeast Asian powerhouses like **Vietnam** ($119.1K) and **Indonesia** ($103.3K) overtake previously higher-income countries including **Mexico** ($99.0K), **Russia** ($91.1K), and **Brazil** ($81.3K) by the late 21st century.
+* 🌍 **African Growth Frontiers:** Sub-Saharan African economies (Ethiopia, Nigeria, DR Congo) achieve robust continuous compound expansion (4.5%–5.1% CAGR), yet require sustained institutional and physical capital investment to close the productivity frontier gap.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Economies-2100&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Economies-2100&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Contributions
+
+Thank you for visiting and exploring **Economies-2100**! If you find this economic simulation, dataset, or visualization insightful:
+
+- ⭐ **Star this repository** to support macroeconomic research and increase project visibility.
+- 🍴 **Fork the project** to adapt parameters, add new economies, or experiment with your own economic convergence rates.
+- 📢 **Share with fellow economists, researchers, and data scientists!**
+- ☕ **Support the maintainer:** You can buy a coffee and support continued open-source development on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE) — free for educational, academic, and commercial research use.
