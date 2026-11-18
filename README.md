@@ -2,6 +2,7 @@
 
 # GDP per Capita Projections for Major Economies (2026–2100)
 
+
 ## Overview
 To model how all **16 countries with populations exceeding 100 million** in 2026 evolve by 2100, economists use a **Conditional Solow Convergence Model**. Unlike naive exponential compounding—which unrealistically assumes developing economies grow at high rates indefinitely—conditional convergence accounts for diminishing returns to capital as an economy approaches its structural productivity frontier ($y^*$).
 
@@ -41,6 +42,10 @@ Running the simulation across all 16 nations highlights strong relative catch-up
 | **Nigeria** | 242.4 | $1,590 | $7,743 | $22,389 | **$44,059** | 4.59% | 16.7% |
 | **Pakistan** | 259.3 | $1,840 | $7,323 | $19,372 | **$37,183** | 4.15% | 14.1% |
 | **DR Congo** | 116.5 | $1,110 | $5,403 | $16,032 | **$32,644** | 4.68% | 12.4% |
+
+---
+
+![GDP per Capita Projections (2026–2100)](assets/gdp_per_capita_2100_annotated.png)
 
 ---
 
