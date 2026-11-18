@@ -174,3 +174,12 @@ Thank you for visiting and exploring **Economies-2100**! If you find this econom
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE) — free for educational, academic, and commercial research use.
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Economies-2100&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Economies-2100_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Economies-2100_growth.svg">
+  </picture>
+</a>
